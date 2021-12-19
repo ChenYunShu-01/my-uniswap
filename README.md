@@ -3,4 +3,8 @@
 
 **步骤**
 
+1. 下载本仓库的uniswap sdk代码（以集成factory，router和weth合约），
+2. 下载uniswap interface的代码，推荐下载较早期的版本：git clone -b v2.6.5 https://github.com/Uniswap/interface.git
+3. 
+
 
