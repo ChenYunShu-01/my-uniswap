@@ -1,0 +1,22 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^3.4.1",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.34",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.32",
+    "hardhat": "^2.1.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "web3": "1.2.11"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
