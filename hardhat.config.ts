@@ -24,16 +24,15 @@ import { HardhatUserConfig } from "hardhat/config";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const mnemonic = "frequent unhappy asset plug kitten dad warm begin run feed often expand";
+// 这里替换为自己的助记词
+const mnemonic = "**********";
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
       forking: {
-        // url: 'https://mainnet.infura.io/v3/0513b51a04a54bb7a68b4d330777d74a'
         url: "https://ropsten.infura.io/v3/73f0ab2741974136a696cf8e7672d385",
-        //url: "https://eth-kovan.alchemyapi.io/v2/_-ujxbv-FqFBsTabUAIF6HKRuD3nqvwu",
         blockNumber: 24459306,
       },
       accounts: {
@@ -44,23 +43,8 @@ const config: HardhatUserConfig = {
         blockGasLimit: 0x1fffffffffffff,
         allowUnlimitedContractSize: true,
     },
-    kovan: {
-      url: "https://eth-kovan.alchemyapi.io/v2/_-ujxbv-FqFBsTabUAIF6HKRuD3nqvwu",
-      // url: "https://kovan.infura.io/v3/0513b51a04a54bb7a68b4d330777d74a",
-      // accounts: ['49c794db293f4a6e8422107495b0610017b6f1b2972fa975d9331d39c507d453']
-      accounts: {
-        mnemonic: mnemonic
-      },
-      timeout: 600000,
-
-      gas: 20e10,
-      blockGasLimit: 0x1fffffffffffff,
-    },
     ropsten: {
       url: "https://ropsten.infura.io/v3/73f0ab2741974136a696cf8e7672d385",
-      //url: "https://eth-kovan.alchemyapi.io/v2/_-ujxbv-FqFBsTabUAIF6HKRuD3nqvwu",
-      // url: "https://kovan.infura.io/v3/0513b51a04a54bb7a68b4d330777d74a",
-      // accounts: ['49c794db293f4a6e8422107495b0610017b6f1b2972fa975d9331d39c507d453']
       accounts: {
         mnemonic: mnemonic
       },
