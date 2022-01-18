@@ -16,13 +16,13 @@
 11. 运行yarn start，成功部署前端到本地，可以用之前部署的代币tokenA和tokenB作为测试添加流动性以及兑换
 
 
-**合约结构：**
+**合约结构：**  
 UniswapV2ERC20 ---继承---> UniswapV2Pair ---引用---> UniswapV2Factory
 
-**创建流动性**
+**创建流动性**  
 项目方 ---创建流动性---> UniswapV2Router ---调用---> UniswapV2Factory ---部署---> UniswapV2Pair
 
-**交易**
+**交易**  
 用户 ---交易---> UniswapV2Router ---调用---> UniswapV2Pair
 
 **Uniswap运行逻辑**
